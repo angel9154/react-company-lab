@@ -7,6 +7,7 @@ import History from "./components/History";
 import PastWork from "./components/Pastwork";
 import Staff from "./components/Staff";
 import ContactUs from "./components/Contactus";
+import ExternalLinks from './components/ExternalLinks';
 
 const App = () => {
   const [navItem, setNavItem] = useState("");
@@ -31,18 +32,21 @@ const App = () => {
     if (navItem === "contact us") {
       return <ContactUs />;
     } 
+    if (navItem === "external links") {
+      return <ExternalLinks />;
+    } 
     
   };
 
   return (
     <>
-    <div className="navBar">
+    {/* <div className="navBar"> */}
      
       <div><Navbar handleClick={handleClick} /></div>
      
       
-      <div>{renderComponent()}</div>
-    </div>
+      <div className='renderComponent'>{renderComponent()}</div>
+    {/* </div> */}
     </>
   );
 };

@@ -1,10 +1,5 @@
 const Staff = () => {
-    return (
-      <p>
-        Staff
-      </p>
-    );
-  };
-  
-  export default Staff;
-  
+  return <h1>Staff:</h1>;
+};
+
+export default Staff;

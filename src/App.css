@@ -1,17 +1,38 @@
 .navBar{
   /* display: flex; */
   /* justify-content: space-evenly; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* max-width: 500px; */
+}
+
+.renderComponent{
+  /* display: flex; */
+  justify-self: center;
+margin-top: 400px;
+max-width: 500px;
+/* border: 2px solid red; */
 }
 
 .buttons{
   display: flex;
   border: 2px solid red;
    /* justify-content: space-evenly; */
-  gap: 350px;
-
+  gap: 250px;
+  justify-self: space-evenly;
 }
+
+button:hover{
+  background-color: purple;
+  cursor: pointer;
+  color: white;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 20px;
+} 
 
 #root {
   /* max-width: 1280px; */
@@ -22,38 +43,3 @@
 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
