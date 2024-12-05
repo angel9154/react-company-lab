@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Navbar = ({ handleClick }) => {
   return (
     <>
-    <div className="buttons">
+    <div className="navBar">
       <button onClick={() => handleClick("home")} type="button">
         Home
       </button>
