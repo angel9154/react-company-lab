@@ -1,8 +1,25 @@
+.navBar{
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  border: 2px solid red;
+  /* max-width: 500px; */
+}
+
+.buttons{
+  display: flex;
+  border: 2px solid red;
+   /* justify-content: space-evenly; */
+  gap: 350px;
+
+}
+
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  border: 2px solid red;
+
 }
 
 .logo {
