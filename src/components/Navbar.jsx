@@ -1,47 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const Navbar = () => {
-    
-    const [navItems, setNavItem] = useState('home');
-    
-    
-    const handleClick = (navItem) => {
-      setNavItem(navItem);
-    };
-    const renderContent = () => {
-        if (navItems === 'home') {
-            return <Home />;
-        }
-          return <Home />;
-      }
-}
+const Navbar = ({ handleClick }) => {
+  return (
+    <>
+      <button onClick={() => handleClick("home")} type="button">
+        Home
+      </button>
+      <button type="button">History</button>
+      <button type="button">Past work</button>
+      <button type="button">Staff</button>
+      <button type="button">Contact us</button>
+    </>
+  );
+};
 
-
-
-
-
-
-
-    // <>
-    //         <li>Home</li>
-    //         <li>About</li>
-    //         <li>Past Work</li>
-    //         <li>Contact</li>
-    //       </>
-
-
-
-
-
-
-
-
-
-
-//DEAD CODE 
-// State to control the navbar collapse
-    // const [isNavOpen, setIsNavOpen] = useState(false);
-
-    // const handleNavToggle = () => {
-    //     setIsNavOpen(!isNavOpen); // Toggle the state between true/false
-    //   };
+export default Navbar;
