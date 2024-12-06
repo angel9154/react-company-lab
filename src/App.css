@@ -1,19 +1,27 @@
 
 .renderComponent{
   /* display: flex; */
-  justify-self: center;
-margin-top: 200px;
-max-width: 500px;
+justify-self: center;
+margin-top: 100px;
+max-width: 600px;
 /* border: 2px solid red; */
 color: white;
+text-align: center;
+background-color: #333333;
+padding: 20px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .navBar{
   display: flex;
   border: 2px solid #697565;
-   /* justify-content: space-evenly; */
-  gap: 250px;
-  justify-self: space-evenly;
+  /* justify-content: center; */
+  gap: 70px;
+  /* justify-self: space-evenly; */
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 button {
@@ -30,7 +38,21 @@ button:hover{
 form{
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-weight: 600;
+  
+}
+
+input {
+  background-color: gray;
+  color: white;
+}
+
+input:focus{
+  /* box-shadow: none; */
+  /* border: none; */
+  outline: none;
+
 }
 
 li,
@@ -49,7 +71,7 @@ a{
 }
 
 #root {
-  /* max-width: 1280px; */
+  /* max-width: 800px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -57,7 +79,7 @@ a{
 }
 
 p {
-  color: #697565;
+  color: #dddddd;
 }
 
 h1{
