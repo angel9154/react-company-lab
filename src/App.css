@@ -10,7 +10,7 @@ color: white;
 
 .navBar{
   display: flex;
-  border: 2px solid blue;
+  border: 2px solid #697565;
    /* justify-content: space-evenly; */
   gap: 250px;
   justify-self: space-evenly;
@@ -18,10 +18,11 @@ color: white;
 
 button {
   font-size: 18px;
+  border-radius: 30%;
 }
 
 button:hover{
-  background-color: purple;
+  background-color: #697565;
   cursor: pointer;
   color: white;
 }
@@ -38,6 +39,8 @@ ul{
   flex-direction: column;
   padding: 20px;
   row-gap: 20px;
+  color: #ECDFCC;
+ 
  
 } 
 
@@ -50,6 +53,14 @@ a{
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  border: 2px solid red;
+  border: 2px solid #ECDFCC;
+}
+
+p {
+  color: #697565;
+}
+
+h1{
+  color: #ECDFCC
 }
 
